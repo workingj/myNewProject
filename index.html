@@ -3,80 +3,48 @@
   <head>
     <meta charset="UTF-8" />
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <!-- <link rel="stylesheet" href="reset.css" /> -->
     <link rel="stylesheet" href="style.css" />
     <title>My New Project</title>
   </head>
   <body>
-    <nav>
-      <div class="nav-left">Logo</div>
-      <div class="nav-right">
-        <ul>
-          <li><a href="#home">Home</a></li>
-          <li><a href="#duck">Talk to the duck</a></li>
-          <li><a href="#emergency">Emergency Kit</a></li>
-          <li><a href="#contact"> Contact</a></li>
-        </ul>
-      </div>
-    </nav>
-    <header id="home">
-      <h1>Hello World</h1>
-      <p>
-        ..and hello you! This is your first ever coding project. At the end of
-        this workshop you will have created your first little blog! In the
-        process you will get to know a few concepts and ressources, that will
-        help you along your coding Boot Camp. Feel free to fill this page with
-        your own text, add your personal style to it and make it yours!
-      </p>
-      <img src="./images/github.png" alt="" />
-    </header>
-    <main>
-      <section id="duck">
-        <div class="text">
-          <h2>Your new best friend</h2>
-          <p>Your text here...</p>
-        </div>
-        <div class="duck">
-          <a href="https://github.com/workingj"
-            ><img src="https://avatars.githubusercontent.com/u/19818596?v=4" alt="profile picture"
-          /></a>
-        </div>
-      </section>
-      <section id="emergency">
-        <h2>In case of emergency click on:</h2>
-        <div class="grid-container">
-          <a
-            href="https://discordapp.com/channels/641221910146842644/641593560394760200"
-            ><div class="grid-item">Discord</div></a
-          >
-          <a href="https://stackoverflow.com/"
-            ><div class="grid-item">Stack Overflow</div></a
-          >
-          <a href="https://developer.mozilla.org"
-            ><div class="grid-item">MDN</div></a
-          >
-          <a href="https://www.w3schools.com/"
-            ><div class="grid-item">W3</div></a
-          >
-          <a href="https://medium.com/"><div class="grid-item">Medium</div></a>
-          <a href="https://www.codenewbie.org/podcast"
-            ><div class="grid-item">Podcast</div></a
-          >
-        </div>
-      </section>
-    </main>
-    <footer id="contact">
-      <h2>Contact us</h2>
-      <form>
-        <input type="text" />
-        <textarea cols="30" rows="10"></textarea>
-        <button>Submit</button>
-      </form>
-
-      <div>Proudly created by <em><a href="https://github.com/workingj/"
-        >workingj</a></em></div>
-      <a href="https://github.com/workingj/"
-        ><img class="github" src="./images/github.png" alt="github-icon"
-      /></a>
-    </footer>
+    <div id="card">
+      <header>
+        <span>wbs coding school</span>
+        <span>web app development</span>
+        <span>2023</span>
+        <span>WDG#014</span>
+        <a href="https://github.com/workingj/" target="_blank">@workingj</a>
+        <span>&nbsp;</span>
+      </header>
+      <main>
+        <section id="left">
+          <img
+            src="https://learn.wbscodingschool.com/wp-content/uploads/avatars/1368/6540d60bc7a3b-bpthumb.jpg"
+            alt="profile picture"/>
+            <data><strong>name:</strong> <span>working j</span></data>
+            <data><strong>age:</strong> <span>n.a.</span></data>
+            <data><strong>country:</strong> <span>Germany</span></data>
+            <data><strong>city:</strong> <span>The Village</span></data>
+            <data><strong>profession:</strong> <span>Developer</span></data>
+            <data><strong>birthday:</strong> <span>33.33.2033</span></data>
+        </section>
+        <section id="right">
+          <em>skills and experience</em>
+          <div id="grid">
+            <a href="https://www.w3.org/TR/2014/REC-html5-20141028/" target="_blank"><img src="./images/n-html.svg" /></a>
+            <a href="https://www.w3.org/TR/2001/WD-css3-roadmap-20010523/" target="_blank"><img src="./images/n-css.svg" /></a>
+            <a href="http://es6-features.org/#Constants" target="_blank"><img src="./images/n-js.svg" /></a>
+            <a href="https://www.python.org/" target="_blank"><img src="./images/n-python.svg" /></a>
+            <a href="https://www.php.net/manual/de/intro-whatis.php" target="_blank"><img src="./images/n-php.svg" /></a>
+            <a href="https://www.gnu.org/software/bash/manual/bash.html" target="_blank"><img src="./images/n-bash.svg" /></a>
+            <a href="https://www.rust-lang.org/" target="_blank"><img src="./images/n-rust.svg" /></a>
+            <a href="https://docs.oracle.com/javase/tutorial/" target="_blank"><img src="./images/n-java.svg" /></a>
+            <a href=https://learn.microsoft.com/de-de/dotnet/csharp/tour-of-csharp/" target="_blank"><img src="./images/n-csharp.svg" /></a>
+          </div>
+        </section>
+      </main>
+      <footer>test</footer>
+    </div>
   </body>
 </html>
