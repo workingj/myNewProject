@@ -1,3 +1,24 @@
+:root {
+
+ --dark: #001F3F;
+ --middle: #083358;
+ --front: #0D63A5;
+ --highlight: #FFD717;
+}
+/* #FFCC70
+#FFFADD
+#8ECDDD
+#22668D */
+
+/* #219C90 */
+/* #E9B824 */
+/* #EE9322 */
+/* #D83F31 */
+
+body {
+  font-family: 'Robot Slab';
+  background-color: var(--dark);
+}
 nav {
   border: solid green;
   display: flex;
@@ -67,4 +88,41 @@ footer {
   display: flex;
   flex-direction: column;
   text-align: center;
+}
+
+h1 {
+/*animation-name - animation-duration - animation-delay animation-iteration-count */
+animation: unblur 3s 1s 2;
+}
+
+/*Keyframe definition
+This custom keyframe rule named “unblur” will change the appearance of a text:
+it will start with a text-shadow and will end with no text-shadow.
+This is the custom animation that we will use inside the animation property */
+@keyframes unblur {
+  from {
+    text-shadow: 0 0 8px #c0c0c0;
+
+  }
+  to {
+    text-shadow: 0;
+  }
+}
+
+section {
+  color: #c0c0c0;
+/*here we define what properties the transition should apply (background-colo, color
+and font-size*/
+  transition-property: background-color color font-size;
+/* here we define how long our transition should last*/
+  transition-duration: 2s;
+/* here we say that our transition should start0,5 seconds after the trigger*/
+  transition-delay: 0.5s;
+}
+
+/* here we define how our transition properties will change on hover*/
+section:hover {
+  color: #00ff41;
+  font-size: 1.6rem;
+  background-color: #111111;
 }
